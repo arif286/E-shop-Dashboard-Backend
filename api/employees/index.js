@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const root = require("app-root-path");
 const mongo = require(`${root}/services/mongo-crud`);
 const { generateMongoDbUri } = require(`${root}/services/mongo-uri`);
 
@@ -39,7 +40,7 @@ const insertEmployees = async (req, res) => {
     )
     return res.status(200).json({
       success: true,
-      data: orders
+      data: employees
     });
     } catch (error) {
       return res.status(400).json({
@@ -49,7 +50,7 @@ const insertEmployees = async (req, res) => {
 
     }
 }
-router.get('/orders',fetchAllEmployees);
-router.post('/orders',insertEmployees);
+router.get('/employees',fetchAllEmployees);
+router.post('/employees',insertEmployees);
 
 module.exports = router;

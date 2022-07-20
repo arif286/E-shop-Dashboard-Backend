@@ -8,8 +8,6 @@ app.use(express.json());
 
 
 app.disable("x-powered-by");
-// app.set("models", require("./models"));
-
 const app_url = process.env.APP_URL;
 
 app.use((req, res, next) => {

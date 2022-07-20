@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const root = require("app-root-path");
 const mongo = require(`${root}/services/mongo-crud`);
 const { generateMongoDbUri } = require(`${root}/services/mongo-uri`);
 

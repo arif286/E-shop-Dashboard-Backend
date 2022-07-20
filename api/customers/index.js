@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const root = require("app-root-path");
 const mongo = require(`${root}/services/mongo-crud`);
 const { generateMongoDbUri } = require(`${root}/services/mongo-uri`);
 
@@ -49,7 +50,7 @@ const insertCustomers = async (req, res) => {
 
     }
 }
-router.get('/orders',fetchAllCustomers);
-router.post('/orders',insertCustomers);
+router.get('/customers',fetchAllCustomers);
+router.post('/customers',insertCustomers);
 
 module.exports = router;
