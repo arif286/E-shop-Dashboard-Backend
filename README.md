@@ -74,6 +74,16 @@ This application is hosted on Heroku Server.
 
 - after the deployment of the project add env variable in heroku.
 
-<img alt="GIF" src="https://i.ibb.co/5vpW4vs/Screenshot-from-2022-07-20-21-21-37.png" width="full" height="350" />
+<img alt="heroku" src="https://i.ibb.co/5vpW4vs/Screenshot-from-2022-07-20-21-21-37.png" width="full" height="350" />
 
-<img alt="GIF" src="https://i.ibb.co/sCD642t/Screenshot-from-2022-07-20-21-33-39.png" width="full" height="350" />
+<img alt="heroku" src="https://i.ibb.co/sCD642t/Screenshot-from-2022-07-20-21-33-39.png" width="full" height="350" />
+
+### How can you manage 10M+ users data in your DB?
+
+For scaling 10+ users data I would like to choose NoSQL Database. NoSQL database store only key-value pairs and offers basic functionality for retrieving the value associated with key. For Big Data it's easer to scale than SQL database. There are some popular NoSQL databases Like MongoDB, Cassandra
+and DynamoDB. This type of database is good option for storing blog comments, product reviews, user profiles and settings. This type of database is optimized for horizontal scaling, which means we need to add more machines to store more data. Scaling MongoDB horizontally is achieved through sharding and replica sets.
+sharding is horizontal scaling by spreading data across multiple nodes. In MongoDB, this is handled automatically by the sharded cluster balancer. Replica sets seem similar to sharding, but they differ in that the dataset is duplicated. Replication allows for high availability, redundancy/failover handling, and decreased bottlenecks on read operations.
+
+<img alt="heroku" src="https://i.ibb.co/YNcpFGZ/Screenshot-from-2022-07-21-08-35-11.png" width="full" height="350" />
+
+<img alt="heroku" src="https://i.ibb.co/4RHXPzP/Screenshot-from-2022-07-21-08-35-20.png" width="full" height="350" />
